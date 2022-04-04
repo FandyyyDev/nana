@@ -1034,7 +1034,11 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 menu =
 `*${ucapanWaktu} @${senderr.split('@')[0]}*
 
-*Untuk List Sewa Bot Bisa Chat Owner 😁`
+List harga sewa bot by nana
+Perminggu 1,5k
+Perbulan 2,5k
+Permanen 5k
+`
 Dhani.sendMessage(from, { contentText: `${menu}`, footerText: `*_${tanggal} - ${time} WIB_*`, buttons: [{ buttonId: `${prefix}payment`, buttonText: { displayText: 'ᴘᴀʏᴍᴇɴᴛ' }, type: 1 },{ buttonId: `${prefix}owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 } ], headerType: 'LOCATION', locationMessage: { degreesLatitude: '', degreesLongitude: '', jpegThumbnail: fakeimage, contextInfo: {mentionedJid: [senderr]}}}, 'buttonsMessage')
 break
 case 'bayar':
@@ -1043,8 +1047,8 @@ if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted
 gambar = fs.readFileSync('./media/sewa.jpg')
 menunya = `*「 PAYMENT 」*
 
-Gopay scan diatas
-Qris all pay?cht Owner`
+Sewa bot?
+Silahkan scan qr diatas`
 but = [
 { buttonId: `${prefix}menu`, buttonText: { displayText: 'ᴍᴇɴᴜ' }, type: 1 },
 { buttonId: `${prefix}owner`, buttonText: { displayText: 'ᴏᴡɴᴇʀ' }, type: 1 }
